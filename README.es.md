@@ -2,7 +2,7 @@
 
 **Cuéntanos quién eres y te diremos qué aprender primero.**
 
-[中文](README.md) · [English](README.en.md) · Español · [日本語](README.ja.md)
+[中文](README.zh-CN.md) · [English](README.md) · Español · [日本語](README.ja.md)
 
 👉 **Pruébalo: https://ll-code663.github.io/ai-roadbook/**
 

@@ -1,57 +1,57 @@
-# AI 入门路书
+# AI Roadbook
 
-**告诉我你是谁，我告诉你先学什么。**
+**Tell us who you are, and we'll tell you what to learn first.**
 
-中文 · [English](README.en.md) · [Español](README.es.md) · [日本語](README.ja.md)
+[中文](README.zh-CN.md) · English · [Español](README.es.md) · [日本語](README.ja.md)
 
-👉 **在线使用：https://ll-code663.github.io/ai-roadbook/**
+👉 **Try it: https://ll-code663.github.io/ai-roadbook/**
 
-网上免费的 AI 课程很多，但真正卡住新手的往往不是「找不到」，而是「看不懂、不知道从哪开始」。很多好课放在 GitHub 上，打开就是一堆文件夹和英文，劝退了大量非技术背景的人。
+There are plenty of great free AI courses online. What stops beginners usually isn't finding them—it's not understanding them and not knowing where to start. Many of the best courses live on GitHub, where newcomers are greeted by a wall of folders and jargon.
 
-AI 入门路书想解决的就是这一步。
+AI Roadbook tackles exactly that step.
 
-## 有什么不同
+## What's different
 
-- **先了解你，再推荐。** 回答几个简单问题：有没有工作、做哪一行、学什么专业、对什么感兴趣。冷门专业和行业也能按兴趣选，每一步都可以选「不确定」跳过。
-- **给路线，不给清单。** 推荐按「起步 → 动手 → 深入」三段排好，每段只放最合适的几门。
-- **告诉你打开后怎么读。** 每门课都附一句指引，比如「第 1–5 课不写代码也能看懂，第 6 课以后可以先跳过」。
-- **直达最好读的入口。** 有中文版就直接链到中文版，有在线阅读网站就不让你去翻 GitHub。
-- **照顾真正的零基础。** 零门槛模式只推荐不用写代码、不用碰 GitHub 的课；术语点一下就有白话解释；附一份 GitHub 新手指南。
-- **四种语言。** 中文、English、Español、日本語，入口链接会跟着语言切换到对应版本。
+- **It asks about you first.** A few quick questions: do you work, in what field, what do you study, what are you interested in. Less common majors and jobs can pick interests instead, and every step has a “not sure / skip” option.
+- **A route, not a list.** Recommendations are laid out in three stages—start, hands-on, deeper—with only the best few picks in each.
+- **It tells you how to read each course.** Every resource comes with a short guide, like “Lessons 1–5 need no code; you can skip Lesson 6 onward at first.”
+- **It links you to the easiest way in.** If a version in your language exists, the button goes straight there. If there's an online reader, you don't have to dig through GitHub.
+- **Built for true beginners.** Zero-barrier mode only recommends courses that need no coding and no GitHub; jargon has tap-to-explain definitions; there's a GitHub guide for first-timers.
+- **Four languages.** 中文, English, Español and 日本語—and links switch to the matching language version.
 
-收录 47 个免费资源，包括微软、Hugging Face、谷歌、Anthropic、Datawhale、吴恩达、李宏毅等的课程和教程。
+It covers 47 free resources from Microsoft, Hugging Face, Google, Anthropic, Datawhale, Andrew Ng, Hung-yi Lee and more.
 
-## 本地运行
+## Run locally
 
-不需要安装任何东西。下载仓库后，用浏览器打开 `index.html` 即可。
+Nothing to install. Download the repository and open `index.html` in your browser.
 
-## 项目结构
+## Project structure
 
 ```
-index.html          页面结构
-css/style.css       样式
-js/i18n.js          界面文字（四种语言）、术语表、专业分类、职业和兴趣分类
-js/resources.js     资源数据（想添加或修改资源，改这个文件）
-js/app.js           引导流程、推荐逻辑、各页面渲染
+index.html          page structure
+css/style.css       styles
+js/i18n.js          UI text (four languages), glossary, fields of study, occupations and interests
+js/resources.js     resource data (edit this file to add or change resources)
+js/app.js           onboarding flow, recommendation logic, rendering
 ```
 
-## 参与贡献
+## Contributing
 
-欢迎补充你所在领域的好资源，或者修正描述和链接。具体方法见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+Good resources from your field and fixes to descriptions or links are very welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-特别欢迎：
+Especially helpful:
 
-- 冷门专业和行业的 AI 学习资源
-- 国内可以顺畅访问的替代链接（例如 B 站、中国大学 MOOC）
-- 西班牙语、日语母语者校对翻译
+- AI learning resources for less common majors and professions
+- Alternatives that are easy to access from mainland China (e.g. Bilibili, icourse163)
+- Native speakers reviewing the Spanish and Japanese translations
 
-## 说明
+## Notes
 
-- 所有资源由各自的作者和平台维护，章节、翻译和收费政策会变化，以原页面为准。
-- 你的选择只保存在你自己的浏览器里，不会上传到任何服务器。
-- 涉及医疗、法律、投资的应用，请由专业人士把关。
+- Each resource is maintained by its own authors and platform. Chapters, translations and pricing change; the original page is the source of truth.
+- Your answers are stored only in your own browser and are never uploaded anywhere.
+- For uses involving health, law or investing, have a professional review the conclusions.
 
-## 许可证
+## License
 
-- 代码：[MIT](LICENSE)
-- 资源介绍、阅读指引等文字内容：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)
+- Code: [MIT](LICENSE)
+- Resource descriptions and reading guides: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)

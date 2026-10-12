@@ -2,7 +2,7 @@
 
 **あなたのことを教えてください。最初に何を学ぶべきかをお伝えします。**
 
-[中文](README.md) · [English](README.en.md) · [Español](README.es.md) · 日本語
+[中文](README.zh-CN.md) · [English](README.md) · [Español](README.es.md) · 日本語
 
 👉 **今すぐ使う：https://ll-code663.github.io/ai-roadbook/**
 
