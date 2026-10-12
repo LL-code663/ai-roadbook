@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI 入门路书 · AI Roadbook</title>
+<meta name="description" content="按你的职业、专业或兴趣，从免费 AI 课程里排出一条三段学习路线，并告诉你每门课打开后先看哪。Free, open-source AI learning routes for beginners from any background.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Serif+JP:wght@600;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <button type="button" class="brand-mini" id="brand"></button>
+    <nav class="tabs" id="tabs" hidden></nav>
+    <div class="langs" id="langs" role="group" aria-label="Language"></div>
+  </div>
+
+  <section class="view" id="v-onboard" hidden>
+    <div class="hero">
+      <h1 id="h1"></h1>
+      <p id="lede"></p>
+      <div class="meta"><span id="m-total"></span><span id="m-web"></span><span id="m-date"></span></div>
+    </div>
+    <div class="wizard" id="wizard"></div>
+  </section>
+
+  <section class="view" id="v-rec" hidden>
+    <div class="route-head">
+      <div>
+        <h2 class="sec" data-i="route"></h2>
+        <div class="summary" id="summary"></div>
+      </div>
+      <button type="button" class="btn" id="copy" data-i="copy"></button>
+    </div>
+    <div class="ideas" id="ideas"></div>
+    <div class="stages" id="stages"></div>
+  </section>
+
+  <section class="view" id="v-lib" hidden>
+    <h2 class="sec" data-i="libT"></h2>
+    <p class="intro" data-i="libI"></p>
+    <div class="filters">
+      <input class="text-in" id="q" type="search">
+      <div class="fgroup" id="f-src" role="group"></div>
+      <div class="fgroup" id="f-code" role="group"></div>
+      <div class="fgroup" id="f-lang" role="group"></div>
+      <div class="fgroup" id="f-type" role="group"></div>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="rows" id="rows"></div>
+  </section>
+
+  <section class="view" id="v-guide" hidden>
+    <div class="guide">
+      <div>
+        <h2 class="sec" data-i="guideT"></h2>
+        <p class="intro" data-i="guideI"></p>
+        <ol class="steps" id="steps"></ol>
+      </div>
+      <div>
+        <h2 class="sec" data-i="glossT"></h2>
+        <p class="intro" data-i="glossI"></p>
+        <dl class="gloss" id="gloss"></dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-settings" hidden>
+    <h2 class="sec" data-i="setT"></h2>
+    <p class="intro" data-i="setI"></p>
+    <div class="sets" id="sets"></div>
+    <div class="set-actions">
+      <button type="button" class="btn primary" id="see-rec" data-i="seeRec"></button>
+      <button type="button" class="btn" id="restart" data-i="restart"></button>
+    </div>
+  </section>
+
+  <footer data-i="footer"></footer>
+</div>
+<div class="pop" id="pop" role="tooltip" hidden></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/resources.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
