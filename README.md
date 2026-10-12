@@ -1,57 +1,21 @@
 # AI Roadbook
 
-**Tell us who you are, and we'll tell you what to learn first.**
-
 [中文](README.zh-CN.md) · English · [Español](README.es.md) · [日本語](README.ja.md)
 
-👉 **Try it: https://ll-code663.github.io/ai-roadbook/**
+I made a small website for people who want to learn AI but don't know where to start.
 
-There are plenty of great free AI courses online. What stops beginners usually isn't finding them—it's not understanding them and not knowing where to start. Many of the best courses live on GitHub, where newcomers are greeted by a wall of folders and jargon.
+There are plenty of good free AI courses online, but when you're new it's hard to tell which one to open first, and many of them live on GitHub, where all you see at first is a pile of folders.
 
-AI Roadbook tackles exactly that step.
+The site asks you a few questions: whether you work, what you do or study, and what you're interested in. Then it puts together a route through free courses, from the basics to more advanced material, and tells you where to start in each one and what you can skip. If you're not sure how to answer a question, you can skip it.
 
-## What's different
+It's free, runs in your browser, and works in English, Chinese, Spanish and Japanese.
 
-- **It asks about you first.** A few quick questions: do you work, in what field, what do you study, what are you interested in. Less common majors and jobs can pick interests instead, and every step has a “not sure / skip” option.
-- **A route, not a list.** Recommendations are laid out in three stages—start, hands-on, deeper—with only the best few picks in each.
-- **It tells you how to read each course.** Every resource comes with a short guide, like “Lessons 1–5 need no code; you can skip Lesson 6 onward at first.”
-- **It links you to the easiest way in.** If a version in your language exists, the button goes straight there. If there's an online reader, you don't have to dig through GitHub.
-- **Built for true beginners.** Zero-barrier mode only recommends courses that need no coding and no GitHub; jargon has tap-to-explain definitions; there's a GitHub guide for first-timers.
-- **Four languages.** 中文, English, Español and 日本語—and links switch to the matching language version.
-
-It covers 47 free resources from Microsoft, Hugging Face, Google, Anthropic, Datawhale, Andrew Ng, Hung-yi Lee and more.
-
-## Run locally
-
-Nothing to install. Download the repository and open `index.html` in your browser.
-
-## Project structure
-
-```
-index.html          page structure
-css/style.css       styles
-js/i18n.js          UI text (four languages), glossary, fields of study, occupations and interests
-js/resources.js     resource data (edit this file to add or change resources)
-js/app.js           onboarding flow, recommendation logic, rendering
-```
+Try it: https://ll-code663.github.io/ai-roadbook/
 
 ## Contributing
 
-Good resources from your field and fixes to descriptions or links are very welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-Especially helpful:
-
-- AI learning resources for less common majors and professions
-- Alternatives that are easy to access from mainland China (e.g. Bilibili, icourse163)
-- Native speakers reviewing the Spanish and Japanese translations
-
-## Notes
-
-- Each resource is maintained by its own authors and platform. Chapters, translations and pricing change; the original page is the source of truth.
-- Your answers are stored only in your own browser and are never uploaded anywhere.
-- For uses involving health, law or investing, have a professional review the conclusions.
+If you know a good resource for your field or find a broken link, issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-- Code: [MIT](LICENSE)
-- Resource descriptions and reading guides: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+The code is under [MIT](LICENSE), and the course descriptions are under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The courses themselves belong to their authors.
