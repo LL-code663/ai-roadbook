@@ -1,6 +1,47 @@
-# 参与贡献 · Contributing
+# Contributing · 参与贡献
 
-[中文](#中文) · [English](#english)
+[English](#english) · [中文](#中文)
+
+## English
+
+### Adding or changing a resource
+
+All resources live in `js/resources.js`. Each resource is an object:
+
+```js
+{
+  repo: "owner/name",              // optional: GitHub repo, shown as a "GitHub repo" link
+  url: {                           // entry links
+    def: "https://...",            // default (original) page
+    zh: "https://...",             // optional: dedicated Chinese page
+    es: "https://...",             // optional: Spanish page
+    ja: "https://..."              // optional: Japanese page
+  },
+  kind: "course",                  // type of the default link: course | site | read | gh
+  langs: ["en", "zh"],             // languages the content is actually available in
+  code: 0,                         // coding needed: 0 none / 1 some / 2 solid
+  stage: 1,                        // 1 start / 2 hands-on / 3 deeper
+  goals: ["use", "build"],         // suitable goals: use AI / build tools / theory
+  fields: ["all", "bio"],          // matching fields, see FIELDS in js/i18n.js; "all" means general
+  type: "course",                  // video | course | tutorial | book | guide | roadmap | examples | collection | domain
+  t: {                             // [name, description, how to read it] in four languages
+    en: ["Name", "One or two sentences", "Where to start, what to skip"],
+    zh: [...], es: [...], ja: [...]
+  }
+}
+```
+
+Guidelines:
+
+- Make “how to read it” concrete: where to start, which parts need no code, what can be skipped at first.
+- Mark glossary terms with `{id:display text}`, e.g. `{llm:large language models}`, so readers can tap them for an explanation. The glossary is `GLOSS` in `js/i18n.js`.
+- Please open every link yourself before submitting.
+- If you can't write all four languages, submit English and Chinese and mention it in the pull request; we'll fill in the rest.
+
+### Other contributions
+
+- Translation review: UI text is in `js/i18n.js`.
+- Broken link or outdated description? Please open an issue.
 
 ## 中文
 
@@ -36,27 +77,9 @@
 - 「打开后怎么读」要具体：从哪一课开始、哪些部分不用写代码、哪些可以先跳过。
 - 文字里可以用 `{id:显示文字}` 标出术语，比如 `{llm:大模型}`，用户点一下就能看到解释。术语表在 `js/i18n.js` 的 `GLOSS` 里。
 - 提交前请亲自打开链接确认可以访问。
-- 如果某种语言你写不了，可以先只写中文和英文，在 Pull Request 里说明，我们会补上。
+- 如果写不了全部四种语言，可以先写英文和中文，在 Pull Request 里说明，我们会补上。
 
 ### 其他贡献
 
 - 翻译校对：界面文字在 `js/i18n.js`。
 - 发现链接失效或描述过时，欢迎直接开 Issue。
-
-## English
-
-### Adding or changing a resource
-
-All resources live in `js/resources.js`. Each one is an object with the fields shown above: entry URLs (`def` plus optional language-specific pages), the languages the content is available in, the coding level (0–2), the stage (1–3), suitable goals, matching fields of study (see `FIELDS` in `js/i18n.js`), a type, and `t`: `[name, description, how to read it]` in each of the four languages.
-
-Guidelines:
-
-- Make “how to read it” concrete: where to start, which parts need no code, what can be skipped at first.
-- Mark glossary terms with `{id:display text}`, e.g. `{llm:large language models}`. The glossary is `GLOSS` in `js/i18n.js`.
-- Please open every link yourself before submitting.
-- If you can't write every language, submit Chinese and English and mention it in the pull request.
-
-### Other contributions
-
-- Translation review: UI text is in `js/i18n.js`.
-- Broken link or outdated description? Please open an issue.
