@@ -399,8 +399,8 @@ function applyLang(){
 function init(){
   let saved=null; try{ saved=JSON.parse(store.get("roadbook2")||"null"); }catch(e){}
   let old=null; try{ old=JSON.parse(store.get("roadbook")||"null"); }catch(e){}
-  const nav=(navigator.language||"").toLowerCase().slice(0,2);
-  ui = saved && I18N[saved.ui] ? saved.ui : old && I18N[old.ui] ? old.ui : old ? "zh" : (I18N[nav] ? nav : "en");
+  // English by default; a language the visitor picked before is remembered
+  ui = saved && I18N[saved.ui] ? saved.ui : old && I18N[old.ui] ? old.ui : "en";
   if(saved && saved.p) P=Object.assign(blank(), saved.p);
   applyLang();
 
